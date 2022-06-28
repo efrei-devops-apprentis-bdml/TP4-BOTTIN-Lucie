@@ -23,7 +23,7 @@ Ce fichier contient les configurations du groupe de ressources, du réseau et so
 ````terraform
 resource   "azurerm_public_ip"   "myvmpublicip"   {} 
 
- resource   "azurerm_network_interface"   "myvm"   {} 
+resource   "azurerm_network_interface"   "myvm"   {} 
 
 resource "azurerm_network_security_group" "security" {}
 
@@ -32,7 +32,7 @@ resource "azurerm_network_interface_security_group_association" "example" {}
 resource "tls_private_key" "example_ssh" {}
 
 
- resource   "azurerm_linux_virtual_machine"   "vm"   { 
+resource   "azurerm_linux_virtual_machine"   "vm"   { 
 
    source_image_reference   {} 
 
